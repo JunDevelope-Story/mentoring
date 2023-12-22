@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans:wght@700&display=swap');
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #363636;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #707070;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.back-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.inputText,
+.inputText-1 {
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    margin-left: 3%;
+}
+
+
+.title,
+.title-sub,
+.name,
+.link {
+    width: 92%;
+    height: 20px;
+    margin-left: 3%;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #999;
+    padding: 10px 0 10px 10px;
+}
+
+.name-1 {
+    margin-left: 8%;
+}
+
+.detail {
+    margin-top: 10px;
+    width: 92%;
+    height: 500px;
+    border-radius: 5px;
+    font-size: 25px;
+    border: 1px solid #999;
+    padding: 10px 0 10px 10px;
+    vertical-align: top;
+    resize: none;
+    margin-left: 3%;
+    font-size: 16px;
+}
+
+.filebox {
+    margin-top: 25px;
+    margin-left: 3%;
+}
+
+.filebox .upload-name {
+    display: inline-block;
+    height: 40px;
+    padding: 5px 0 5px 10px;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    width: 100%;
+    color: #999999;
+    margin-left: 20px;
+    font-size: 18px;
+    width: 80%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.filebox label {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.filebox label:hover {
+    background-color: #b3b3b3;
+    transition: 0.2s;
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+#write,
+#cancel {
+    border: 2px solid #efefef;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.2s;
+}
+
+#write {
+    font-family: 'SUITE-Regular';
+
+    background-color: #3371b8;
+    color: #fff;
+}
+
+#write:hover {
+    background-color: #4e9bff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#cancel {
+    font-family: 'SUITE-Regular';
+
+    background-color: #ff694e;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#cancel:hover {
+    background-color: #ff2f0b;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.main-p {
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .main-p {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-p {
+        font-size: 24px;
+    }
+    .inputText,
+    .inputText-1,
+    .detail {
+        font-size: 20px;
+    }
+    #write,
+    #cancel {
+        padding: 5px 10px;
+    }
+}
